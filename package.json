@@ -1,0 +1,56 @@
+{
+  "name": "true-code",
+  "version": "3.0.0",
+  "description": "studio web site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "gulp build",
+    "dev": "gulp dev",
+    "start": "npm run dev"
+  },
+  "author": "T-code",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.20.5",
+    "@babel/preset-env": "^7.20.2",
+    "autoprefixer": "^9.8.8",
+    "browser-sync": "^2.27.11",
+    "del": "^6.1.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csscomb": "^3.1.0",
+    "gulp-csso": "^4.0.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-include": "^2.4.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
+    "gulp-posthtml": "^3.0.5",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-svgstore": "^8.0.0",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wait": "0.0.2",
+    "gulp-webp": "^4.0.1",
+    "gulp.spritesmith": "^6.13.0",
+    "postcss-css-variables": "^0.18.0",
+    "posthtml-include": "^1.7.4",
+    "run-sequence": "^2.2.1",
+    "sass": "^1.57.1",
+    "vinyl-buffer": "^1.0.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "dependencies": {
+    "@fancyapps/fancybox": "3.5.7",
+    "jquery": "^3.6.3",
+    "jquery-mask-plugin": "^1.14.16",
+    "swiper": "^7.4.1"
+  }
+}

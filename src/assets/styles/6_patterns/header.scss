@@ -1,0 +1,27 @@
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 25px;
+}
+
+.header__logo{
+
+    img{
+        width: 100%;
+    }
+}
+
+.header__burger-button{
+    border: 2px solid #352958;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 60%;
+        fill:#352958;
+    }
+}

@@ -1,0 +1,44 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    border: 1px solid #352958;
+
+}
+
+.sidebar__title{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    span{
+        font-size: 24px;
+    }
+    button{
+        border: none;
+        background: #F8F6FF;
+        img{
+            width: 60%;
+        }
+        &:hover{
+            background-color: #352958;
+            color: #F8F6FF;
+            fill:#F8F6FF;
+        } 
+    }
+}
+
+.sidebar__search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    input{
+        width: 200px;
+    }
+    button{
+     
+        img{
+            width: 70%;
+        }
+    }
+}

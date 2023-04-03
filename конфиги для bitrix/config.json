@@ -1,0 +1,67 @@
+{
+	"build": {
+	    "php": "bitrix/local/templates/имя_вашего_шаблона/",
+	    "html": "bitrix/local/templates/имя_вашего_шаблона/html/",
+	    "js": "bitrix/local/templates/имя_вашего_шаблона/assets/js/",
+		"css": "bitrix/local/templates/имя_вашего_шаблона/",
+		"imgBase": "src/assets/images/",
+	    "img": "bitrix/local/templates/имя_вашего_шаблона/assets/images/",
+	    "fonts": "bitrix/local/templates/имя_вашего_шаблона/assets/fonts/",
+	    "sprites": "bitrix/local/templates/имя_вашего_шаблона/assets/sprites/"
+	},
+	"src": {
+	    "php": "src/php/**/*.php",
+	    "html": "src/html/**/*.html",
+	    "js": {
+	    	"separate": "src/assets/js/separate/*.js",
+	    	"libs": "src/assets/js/libs/*.js",
+	    	"plugins": "src/assets/js/plugins/*.js",
+	    	"components": "src/assets/js/components/*.js"
+	    },
+	    "styleBase": "src/assets/styles/",
+	    "style": "src/assets/styles/style.scss",
+	    "imgBase": "src/assets/images/",
+	    "img": [
+	    	"src/assets/images/static/*.{png,jpg,svg,gif}",
+	    	"src/assets/images/nofollow/*.{png,jpg,svg,gif}",
+	    	"src/assets/images/content/*.{png,jpg,svg,gif}"
+	    ],
+	    "sprite": {
+	    	"svg": "src/assets/images/sprite/svg/*.svg",
+	    	"png": "src/assets/images/sprite/png/*.png"
+	    },
+	    "fonts": "src/assets/fonts/*.*"
+	},
+	"watch": {
+	    "html": "src/html/**/*.html",
+	    "php": "src/php/**/*.php",
+	    "js": {
+	    	"separate": "src/assets/js/separate/*.js",
+	    	"components": "src/assets/js/components/*.js",
+	    	"libs": "src/assets/js/libs/*.js",
+	    	"plugins": "src/assets/js/plugins/*.js"
+	    },
+	    "style": "src/assets/styles/**/*.scss",
+	    "img": "src/assets/images/**/*.*",
+	    "sprite": {
+	    	"svg": "src/assets/images/sprite/svg/*.svg",
+	    	"png": "src/assets/images/sprite/svg/*.png"
+	    },
+	    "fonts": "src/assets/fonts/**/*.*"
+	},
+	"clean": {
+		"css": "bitrix/local/templates/имя_вашего_шаблона/style.css",
+		"cssMin": "bitrix/local/templates/имя_вашего_шаблона/style.min.css"
+	},
+	"server": {
+		"server": {
+	        "baseDir": "bitrix/local/templates/имя_вашего_шаблона/"
+		},
+	    "notify": false,
+	    "open": true,
+	    "cors": true,
+	    "ui": false,
+	    "host": "localhost",
+	    "port": 3000
+	}
+}
