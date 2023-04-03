@@ -1,0 +1,24 @@
+
+
+
+.main {
+    background: #F8F6FF;
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main__tabs {
+    height: 40px; 
+    display: flex;
+}
+
+.main__content {
+    @include border;
+    flex-grow: 1;
+    border-top: none;
+}

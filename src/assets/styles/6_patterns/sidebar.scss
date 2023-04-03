@@ -1,44 +1,80 @@
 .sidebar{
     display: flex;
     flex-direction: column;
-    width: 15%;
-    border: 1px solid #352958;
-
+    @include border;
 }
 
 .sidebar__title{
+    @include border;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding-left: 15px;
+    padding-right: 5px;
     span{
         font-size: 24px;
     }
     button{
+        background-color: #EFF0FF;
         border: none;
-        background: #F8F6FF;
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
         img{
-            width: 60%;
+            width: 100%;
         }
-        &:hover{
-            background-color: #352958;
-            color: #F8F6FF;
-            fill:#F8F6FF;
-        } 
     }
 }
 
 .sidebar__search{
     display: flex;
     flex-direction: row;
-    align-items: center;
+    @include border;
     input{
-        width: 200px;
+        padding-left: 15px;
+        min-width: 0;
+        flex-grow: 1;
+        height: 30px;
+        @include border;
+        border-top:none;
+        border-bottom: none;    
     }
     button{
-     
+        background-color: #EFF0FF;
+        border: none;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
         img{
-            width: 70%;
+            width: 100%;
+            margin-top:5px;
+        }
+    }
+}
+
+.sidebar__archive{
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include border;
+    padding-left: 15px;
+    padding-right: 5px;
+    span{
+        font-size: 24px;
+    }
+    button{
+        background-color: #EFF0FF;
+        border: none;
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        img{
+            width: 100%;
         }
     }
 }

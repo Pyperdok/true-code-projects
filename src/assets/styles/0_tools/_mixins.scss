@@ -1,1 +1,5 @@
 // @import "mixins";
+
+@mixin border {
+    border: 1px solid #DAD4F8;
+}

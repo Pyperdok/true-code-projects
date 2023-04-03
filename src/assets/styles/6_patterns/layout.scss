@@ -1,11 +1,29 @@
 .layout{
-    
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main main";
+    grid-template-columns: 15% 1fr 1fr;
+    grid-template-rows: 100px 1fr;
+    height: 100vh;
+
+    font-family: 'Panton';
+    font-weight: 400;
+    color: #352958;
+    background: #EFF0FF;
+}
+
+.layout__header{
+    grid-area: header;
 }
 
 .layout__sidebar{
-
+    grid-area: sidebar;
+    margin-bottom: 80px;
 }
 
 .layout__main{
-
+    grid-area: main;
+    margin: 0 20px;
+    margin-bottom: 80px;
 }

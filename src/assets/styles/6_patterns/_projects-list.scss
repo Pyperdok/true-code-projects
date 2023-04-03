@@ -1,0 +1,26 @@
+.projects-list {
+    @include border;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.projects-list__item {
+    @include border;
+    border-right: none;
+    border-top: none;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.projects-list__item-name {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.projects-list__item-client {
+    color: #F23B67;
+}

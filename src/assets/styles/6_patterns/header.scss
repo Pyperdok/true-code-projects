@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     margin: 25px;
 }
 
@@ -13,15 +14,18 @@
 }
 
 .header__burger-button{
-    border: 2px solid #352958;
-    border-radius: 10px;
-    width: 45px;
-    height: 45px;
+    @include border;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 15px;
+    box-sizing: content-box;
+    cursor: pointer;
     img{
-        width: 60%;
+        width: 100%;
         fill:#352958;
     }
 }

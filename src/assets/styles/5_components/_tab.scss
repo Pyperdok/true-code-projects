@@ -1,0 +1,15 @@
+.tab {
+    background: #EFF0FF;
+    flex-grow: 1; 
+    @include border;
+    border-radius: 8px 8px 0 0; 
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.active{
+    background: #F8F6FF;
+    border-bottom: none;
+}
