@@ -1,0 +1,40 @@
+.archieve {
+    height: fit-content;
+    max-height: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-background;
+    overflow-y: hidden;
+}
+
+.archieve__list {
+    @include border;
+    display: none;
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
+.archieve__toggler {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @include border;
+    padding: 0 15px 0 5px;
+    font-size: 24px;
+    cursor: pointer;
+    span{
+        margin-left: 15px;
+    }
+    button{
+        background-color: $color-background;
+        border: none;
+        margin-top: 5px;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        img{
+            width: 100%;
+        }
+    }
+}

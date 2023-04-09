@@ -1,0 +1,148 @@
+.project {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.project__title {
+    color: #352958;
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    margin-left: 45px;
+    margin-top: 34px;
+}
+
+.project__desc {
+    width: 434px;
+    height: 344px;
+    margin-left: 45px;
+    margin-top: 120px;
+    font-family: 'Panton';
+    display: flex;
+}
+
+.project__progress {
+    background: #EFF0FF;
+    border: 1px solid #D7D0F7;
+    border-radius: 10px;
+    width: 876px;
+    height: 117px;
+    margin-top: 35px;
+    margin-bottom: 41px;
+}
+
+.project__text {
+    width: 876px;
+    height: 525px;
+    display: flex;
+    background: #EFF0FF;
+    border: 1px solid #D7D0F7;
+    border-radius: 20px;
+    /* top | right | bottom | left */
+    padding: 19px 16px 0 16px;
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+}
+
+.progress__title {
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    color: #352958;
+    text-align: center;
+}
+
+.progress__line {
+    width: 854px;
+    height: 69px;
+    margin: 0 11px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.line__chart {
+    width: 780px;
+    height: 40px;
+    position: relative;
+    background: #77B6E7;
+    border-radius: 15px;
+    font-family: 'Panton';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #352958;
+    // overflow-x: hidden;
+}
+
+.line__chart::before {
+    display: block;
+    content: '';
+    position: absolute;
+    width: 780px;
+    height: 40px;
+    width: 50%;
+    border-radius: 15px;
+    background: #97CC64;
+}
+
+.chart__start > * {
+    display: block;
+    margin: auto;
+}
+
+.chart__now > * {
+    display: block;
+    margin: auto;
+}
+
+.chart__end > * {
+    display: block;
+    margin: auto;
+}
+
+.chart__start {
+    position: absolute;
+    left: -4.8%;
+    top: -70%;
+}
+
+.chart__now {
+    position: absolute;
+    left: 45.2%;
+    top: -70%;
+}
+.chart__end {
+    position: absolute;
+    left: 95.2%;
+    top: -70%;
+}
+
+.desc__keys>* {
+    color: #F23B67;
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.desc__values>* {
+    color: #352958;
+    margin-left: 23px;
+    margin-bottom: 30px;
+    text-align: right;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

@@ -1,4 +1,6 @@
 .tab {
+    text-decoration: none;
+    color: $color-dark;
     background: #EFF0FF;
     flex-grow: 1; 
     @include border;
@@ -7,9 +9,10 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+
+    &--active{
+        background: #F8F6FF;
+        border-bottom: none !important;
+    }
 }
 
-.active{
-    background: #F8F6FF;
-    border-bottom: none;
-}

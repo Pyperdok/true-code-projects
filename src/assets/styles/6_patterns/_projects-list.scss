@@ -4,16 +4,26 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    overflow-y: auto;
 }
 
 .projects-list__item {
     @include border;
     border-right: none;
+    border-left: none;
     border-top: none;
     display: flex;
     flex-direction: column;
     padding: 8px 15px;
     cursor: pointer;
+
+    &--active {
+        background-color: $color-light;
+    }
+}
+
+.projects-list__item:hover {
+    background-color: $color-light;
 }
 
 .projects-list__item-name {

@@ -11,7 +11,9 @@
 </head>
 
 <body style="background: #EFF0FF;">
-
+    <div class="sprite">
+        <include src="src/assets/images/sprite/svg/instruments.svg"></include>
+    </div>
     <div class="layout">
         <div class="layout__header header">
             <div class="header__logo">
@@ -38,64 +40,53 @@
                 </button>
             </div>
             <div class="projects-list">
-                <div class="projects-list__item">
+                <!-- <a class="projects-list__item">
                     <span class="projects-list__item-name">
                         Название проекта
                     </span>
                     <span class="projects-list__item-client">
                         Заказчик
                     </span>
-                </div>
-                <div class="projects-list__item">
-                    <span class="projects-list__item-name">
-                        Название проекта
-                    </span>
-                    <span class="projects-list__item-client">
-                        Заказчик
-                    </span>
-                </div>
-                <div class="projects-list__item">
-                    <span class="projects-list__item-name">
-                        Название проекта
-                    </span>
-                    <span class="projects-list__item-client">
-                        Заказчик
-                    </span>
-                </div>
-                <div class="projects-list__item">
-                    <span class="projects-list__item-name">
-                        Название проекта
-                    </span>
-                    <span class="projects-list__item-client">
-                        Заказчик
-                    </span>
-                </div>
-                <div class="projects-list__item">
-                    <span class="projects-list__item-name">
-                        Название проекта
-                    </span>
-                    <span class="projects-list__item-client">
-                        Заказчик
-                    </span>
-                </div>
+                </a> -->
             </div>
-            <div class="sidebar__archive">
-                <span>Архив</span>
-                <button>
-                    <img src="assets/images/static/arrow.svg" alt="Архив">
-                </button>
+
+            <div class="sidebar__archieve archieve">
+                <div class="archieve__toggler">
+                        <span>Архив</span>
+                        <button>
+                            <img src="assets/images/static/arrow.svg" alt="Архив">
+                        </button>
+                </div>
+                <div class="archieve__list">
+
+                </div>
             </div>
         </div>
         <div class="layout__main main">
-            <div class="main__tabs tabs">
-                <div class="tabs__tab tab active">Проект</div>
-                <div class="tabs__tab tab">Мессенджер</div>
-                <div class="tabs__tab tab">Статистика</div>
-                <div class="tabs__tab tab">Документация</div>
-                <div class="tabs__tab tab">Канбан-доска</div>
+            <div class="main__tabs">
+                <a href="#content-project" class="tab tab--active">Проект</a>
+                <a href="#content-messenger" class="tab">Мессенджер</a>
+                <a href="#content-statistics" class="tab">Статистика</a>
+                <a href="#content-documents" class="tab">Документация</a>
+                <a href="#content-canban" class="tab">Канбан-доска</a>
             </div>
-            <div class="main__content">
 
+            <div class="main__content content">
+                <div id="content-project" class="content__tab-pane content__tab-pane--active">
+                    <include src="src/html/project.html"></include>
+                </div>
+                <div id="content-messenger" class="content__tab-pane">
+                    <include src="src/html/messenger.html"></include>
+                </div>
+                <div id="content-statistics" class="content__tab-pane">
+                    <include src="src/html/statistic.html"></include>
+                </div>
+                <div id="content-documents" class="content__tab-pane">
+                    <p>Documents...</p>
+                </div>
+                <div id="content-canban" class="content__tab-pane">
+                    <include src="src/html/canban.html"></include>
+                </div>
             </div>
         </div>
     </div>

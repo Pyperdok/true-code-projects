@@ -1,0 +1,58 @@
+.canban{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.canban__col{
+ width: 33%;
+ height: 100%;
+ h2{
+    margin-top:10px;
+    text-align: center;
+ }
+}
+
+.canban__col:first-child{
+    @include border;
+    border-top:none;
+    border-bottom:none;
+    border-left:none; 
+}
+
+.canban__col:last-child{
+    @include border;
+    border-top:none;
+    border-bottom:none;
+    border-right:none; 
+}
+
+.canban__cards{
+    gap:10px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.canban__card{
+    background-color: #EFF0FF;
+    width:100%;
+    height:160px;
+    @include border;
+    border-radius: 10px;
+}
+
+.canban__add-card{
+    width:100%;
+    height: 60px;
+    @include border;
+    border-radius: 10px;
+    button{
+        border:none;
+        width: 100%;
+        height: 100%;
+        background-color: #EFF0FF;
+        cursor: pointer;
+    }
+}
