@@ -1,4 +1,5 @@
 $('.archieve__toggler').click(function() {
-    console.log("Супер тест")
+    
     $('.archieve__list').slideToggle()
+    $('.archieve__toggler').toggleClass('archieve__toggler--active')
 })

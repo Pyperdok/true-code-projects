@@ -34,7 +34,17 @@
         height: 40px;
         cursor: pointer;
         img{
+            transition: .5s;
+            transform: rotate(180deg);
             width: 100%;
+        }
+    }
+}
+
+.archieve__toggler--active {
+    button{
+        img{
+            transform: none;
         }
     }
 }

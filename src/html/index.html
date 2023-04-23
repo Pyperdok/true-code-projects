@@ -65,7 +65,6 @@
         <div class="layout__main main">
             <div class="main__tabs">
                 <a href="#content-project" class="tab tab--active">Проект</a>
-                <a href="#content-messenger" class="tab">Мессенджер</a>
                 <a href="#content-statistics" class="tab">Статистика</a>
                 <a href="#content-documents" class="tab">Документация</a>
                 <a href="#content-canban" class="tab">Канбан-доска</a>
@@ -75,18 +74,23 @@
                 <div id="content-project" class="content__tab-pane content__tab-pane--active">
                     <include src="src/html/project.html"></include>
                 </div>
-                <div id="content-messenger" class="content__tab-pane">
-                    <include src="src/html/messenger.html"></include>
-                </div>
                 <div id="content-statistics" class="content__tab-pane">
                     <include src="src/html/statistic.html"></include>
                 </div>
                 <div id="content-documents" class="content__tab-pane">
-                    <p>Documents...</p>
+                    <include src="src/html/documents.html"></include>
                 </div>
                 <div id="content-canban" class="content__tab-pane">
                     <include src="src/html/canban.html"></include>
                 </div>
+            </div>
+            <div class="main__messenger">
+                <div class="main__messenger-menu">
+                    <include src="src/html/messenger.html"></include>
+                </div>
+                <button id="messenger">
+                    <img src="assets/images/static/messenger.svg">
+                </button>
             </div>
         </div>
     </div>
