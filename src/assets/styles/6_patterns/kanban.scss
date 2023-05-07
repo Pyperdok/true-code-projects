@@ -47,10 +47,58 @@
     @include border;
     border-radius: 10px;
     cursor: grab;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 10px;
 
     &--dragging {
-        opacity: .85;
+        cursor: grabbing;
     }
+}
+
+.kanban__name {
+    text-overflow: ellipsis;
+    max-width: 90%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.kanban__description {
+    font-size: 14px;
+    line-height: 1.2em;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.kanban__extra {
+    display: flex;
+    justify-content: space-between;
+}
+
+.kanban__indicator {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    gap: 5px;
+
+    &--updates {
+        color: #F23B67;
+        fill: #F23B67;
+    }
+}
+
+.kanban__icon {
+    width: 20px;
+    height: 20px;
+}
+
+.kanban__date {
+    font-size: 14px;
 }
 
 .kanban__add-card{

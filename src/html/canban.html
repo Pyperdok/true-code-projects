@@ -1,5 +1,5 @@
 <div class="kanban">
-    <div class="kanban__col">
+    <div data-col_id="0" class="kanban__col">
         <h2>Надо сделать</h2>
         <div class="kanban__cards">
             <div class="kanban__add-card">
@@ -7,40 +7,44 @@
                     <img src="assets/images/static/plus.svg" alt="Плюс">
                 </button>
             </div>
-            <div class="kanban__card">
-                1_1
-            </div>
-            <div class="kanban__card">
-                1_2
-            </div>
-            <div class="kanban__card">
-                1_3
-            </div>
+            <!-- Пример карточки
+                <div class="kanban__card">
+                <div class="kanban__name">
+                    Задача 
+                </div>
+                <div class="kanban__description">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <div class="kanban__extra">
+                    <div class="kanban__indicators">
+                        <div class="kanban__indicator">
+                            <div class="kanban__icon">
+                                <svg class="svg">
+                                    <use xlink:href="#icon-comment" />
+                                </svg>
+                            </div>
+                            <div class="kanban__count">
+                                0
+                            </div>
+                        </div>
+                    </div>
+                    <div class="kanban__date">
+                        01.05.2023
+                    </div>
+                </div>
+            </div> -->
         </div>
     </div>
-    <div class="kanban__col">
+    <div data-col_id="1" class="kanban__col">
         <h2>В работе</h2>
         <div class="kanban__cards">
-            <div class="kanban__card">
-                2_1
-            </div>
-            <div class="kanban__card">
-                2_2
-            </div>
+            
         </div>
     </div>
-    <div class="kanban__col">
+    <div data-col_id="2" class="kanban__col">
         <h2>Завершено</h2>
         <div class="kanban__cards">
-            <div class="kanban__card">
-                3_1
-            </div>
-            <div class="kanban__card">
-                3_2
-            </div>
-            <div class="kanban__card">
-                3_3
-            </div>
+            
         </div>
     </div>
 </div>
