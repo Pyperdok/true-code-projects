@@ -29,8 +29,12 @@
 }
 
 .doclist {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 30px;
 }
 
 .doclist__item {
@@ -40,16 +44,26 @@
     margin-bottom: 20px;
 }
 .search__flag {
-    fill:#FF0707;
+    fill:black;
     width: 35px;
     background: none;
     border: none;
+    cursor: pointer;
 }
-// .item__important {
-//     img {
-//         fill:#FF0707;
-//     }
-// }
+
+.search__flag--active {
+    fill:#FF0707;
+}
+
+.item__flag {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.item__flag--active {
+    fill: #FF0707;
+}
 
 .item__date {
     font-family: 'Panton';
@@ -89,6 +103,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .option__delete {
@@ -100,6 +115,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .dragdrop {
